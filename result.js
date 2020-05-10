@@ -11,6 +11,9 @@ class Result extends Component {
             ? this.props.info.volumeInfo.authors.join(', ')
             : this.props.info.volumeInfo.authors
             : this.props.info.volumeInfo.authors;
+        const textSnippet = (this.props.info.searchInfo !== undefined)
+            ? this.props.info.searchInfo.textSnippet
+            : 'No text snippet provided.';
         return (
             <li className='Result'>
                 <h2 className='Book_Title'>{this.props.info.volumeInfo.title}</h2>
@@ -19,7 +22,7 @@ class Result extends Component {
                     <div className='Book_Info'>
                         <p className='Author'>Author: {author}</p>
                         <p className='Price'>Price: {price}</p>
-                        <p className='Description'>{this.props.info.searchInfo.textSnippet}</p>
+                        <p className='Description'>{textSnippet}</p>
                         </div>
                 </div> 
             </li>
