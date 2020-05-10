@@ -1,0 +1,19 @@
+.Search_Filters {
+    height: 30px;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    margin-right: 5px;
+}
+
+select {
+    margin-right: 5px;
+}
+
+#Book_Type {
+width: 200px;
+}
